@@ -1,0 +1,45 @@
+.block-columns {
+    .row {
+       div[class^=col] {
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+        }
+    }
+     .row {
+         margin: 50px 0;
+         > div[class^="col"] {
+             padding: 0 15px;
+             &.cta-image {
+                 @include media-breakpoint-up(lg){
+                     padding-right: 0;
+                 }
+
+                 img {
+                     max-width: 100%;
+                 }
+             }
+         }
+         .cta-image + .cta-text {
+             padding-left: 30px;
+         }
+         .cta-text.text-center {
+             padding: 0!important;
+         }
+         .cta-text.text-truecenter {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+         }
+         .cta-text + .cta-text.text-left,
+         .cta-text:first-child(),
+         .cta-image:first-child {
+             padding-left: 0;
+             padding-right: 40px;
+         }
+     }
+     figure {
+         max-width: 100%;
+     }
+}

@@ -1,0 +1,93 @@
+.h-overflow-hidden {
+    overflow: hidden;
+}
+
+.h-rounded {
+    border-radius: 10px;
+}
+
+.h-rounded-16 {
+    border-radius: 16px;
+}
+
+.h-card-fh {
+    min-height: 100%;
+}
+
+.video-wrapper {
+    max-height: 300px !important;
+}
+
+.text-letterspacing-0 {
+    letter-spacing: 0 !important;
+}
+
+.swiper-costumers {
+    width: 100%;
+    height: auto;   
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    color: #63E07E !important;
+    top: 18.5% !important;
+    font-size: 1.5rem !important;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    
+}
+
+.swiper-button-prev {
+    left: 1.875rem !important;
+    
+    @media(min-width: 1440px){
+        left: 2.5rem !important;
+    }
+    
+}
+.swiper-button-next {
+    right: 1.875rem !important;
+    @media(min-width: 1440px){
+        right: 2.5rem !important;
+    }
+}
+
+.swiper-slide {
+    background-color: white;
+}
+
+.sidebox {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.negative-ls {
+    letter-spacing: -0.02em !important;
+}
+
+.arrow-svg {
+    position: relative;
+    top: -1px;
+}
+.bg-image {
+    
+    background-position: center!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+
+img {
+  max-width:100%;
+}
+
+.opaque-text {
+  opacity:0.6;
+}
+.xlarge-text {
+    font-size: 120px!important;
+    line-height: 115%!important;
+}

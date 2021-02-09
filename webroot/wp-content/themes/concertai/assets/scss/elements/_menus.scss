@@ -1,0 +1,117 @@
+ul.menu, ul.sub-menu {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
+    > li {
+      @include media-breakpoint-down(sm){
+        //margin-bottom:20px;
+      }
+    li {
+      margin-bottom:0;
+    }
+  }
+}
+.primary-navigation-menu#header-navigation-menu {
+    margin-left: 5px;
+    @include media-breakpoint-up(md){
+        margin-left: 0;
+    }
+}
+div.primary-navigation-menu {
+    display: flex;
+    margin: 50px auto;
+    flex-wrap: wrap;
+  
+    @include media-breakpoint-down(sm){
+      margin-top:20px;
+    }
+    @include media-breakpoint-up(lg){
+        margin: 0;
+        flex-wrap: nowrap;
+    }
+    .primary-navigation-column {
+        width: 100%;
+        //text-align: center;
+        margin: 0 auto;
+        @include media-breakpoint-up(lg){
+            width: auto;
+            text-align: left;
+            margin: 0;
+        }
+        a {
+            white-space: nowrap;
+            &:before {
+                content: none;
+            }
+        }
+    }
+    &#header-navigation-menu {
+        .primary-navigation-column {
+            @include media-breakpoint-up(xl){
+                padding-right: 5vw;
+            }
+        }
+    }
+    &#footer-navigation-menu {
+        .primary-navigation-column {
+            @include media-breakpoint-up(xl){
+                padding-right: 4.138vw;
+            }
+        }
+    }
+}
+ul.menu[id^='menu-primary-navigation-menu-column'] {
+    @include media-breakpoint-up(lg){
+        margin: 50px 50px 0 0;
+        li:not(.menu-item-has-children){
+            padding-bottom: 14px;
+        }
+    }
+    @include media-breakpoint-up(xl){
+        margin: 0;
+    }
+    @include media-breakpoint-down(md){
+        ul.sub-menu {
+            margin-top: 0!important;
+        }
+        li.menu-item-has-children {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    li.menu-item {
+        &:before {
+            content: none;
+        }
+        padding-left:0;
+        a {
+            color: $gray-medium;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        ul.sub-menu {
+            margin-top: 15px;
+            li {
+                padding: 6px 0 6px 28px;
+                padding-left: 0;
+            }
+            @include media-breakpoint-up(lg){
+                li {
+                    padding-bottom: 14px;
+                }
+            }
+            a {
+                color: $gray;
+                text-decoration: none;
+                font-weight: normal;
+            }
+        }
+        a:hover {
+            color: $cyan!important;
+            text-decoration: underline!important;
+        }
+    }
+}

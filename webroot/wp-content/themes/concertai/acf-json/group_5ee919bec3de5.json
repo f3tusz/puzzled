@@ -1,0 +1,137 @@
+{
+    "key": "group_5ee919bec3de5",
+    "title": "Block &mdash; Hero",
+    "fields": [
+        {
+            "key": "field_5eea95e658fff",
+            "label": "General Options",
+            "name": "general_options_hero",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5eea91f766fa7"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5ee91a8550839",
+            "label": "Top Navigation Background Color",
+            "name": "top_navigation_background_color",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "dark": "Dark Blue",
+                "light": "White"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "light",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5ee91e6644978",
+            "label": "Subnavigation",
+            "name": "subnavigation",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "basic": "Separate Page menu",
+                "sticky": "In Page Menu (sticky)",
+                "off": "Off"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "off",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5ee91e9e81e25",
+            "label": "Subnavigation Menu",
+            "name": "subnavigation_menu",
+            "type": "menu-chooser",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ee91e6644978",
+                        "operator": "!=",
+                        "value": "off"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/hero"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-blog.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-news.php"
+            }
+        ],
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "posts_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1595402013
+}

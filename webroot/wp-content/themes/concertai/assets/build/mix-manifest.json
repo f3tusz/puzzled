@@ -1,0 +1,12 @@
+{
+    "/main.js": "/main.js",
+    "/style.css": "/style.css",
+    "/style-editor.css": "/style-editor.css",
+    "/main.js.map": "/main.js.map",
+    "/style.css.map": "/style.css.map",
+    "/style-editor.css.map": "/style-editor.css.map",
+    "/manifest.js": "/manifest.js",
+    "/manifest.js.map": "/manifest.js.map",
+    "/vendor.js": "/vendor.js",
+    "/vendor.js.map": "/vendor.js.map"
+}

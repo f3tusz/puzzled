@@ -1,0 +1,23 @@
+//
+// Pagination
+//
+
+.pagination {
+    &.text-center {
+        justify-content:center;
+    }
+    a:not(.nohoversvg), .cta {
+        &:hover {
+            color: $gray;
+            &:before {
+                border-bottom-color: $gray-medium;
+            }
+            svg path {
+                stroke: $gray-medium;
+            }
+        }
+    }
+}
+.ajax-loader {
+    display: none;
+}

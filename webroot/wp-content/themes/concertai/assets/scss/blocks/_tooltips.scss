@@ -1,0 +1,128 @@
+.block-tooltips {
+    .bg-basic {
+        .tooltip:hover:not(.no-content) {
+            background-color: $gray-light!important;
+        }
+    }
+    .bg-solid {
+        .tooltip {
+            background-color: rgba(223,226,240,0.25)!important;
+        }
+        .tooltip:hover:not(.no-content) {
+            background-color: $white!important;
+        }
+
+    }
+    .tooltip_container {
+        display: flex;
+        flex-direction: column;
+        h6 {
+            margin-bottom: 0.5em;
+        }
+        &.solid,&.white {
+            .tooltip {
+                border-bottom-color: rgba(255,255,255,0.25);
+                &:last-child {
+                    border-bottom-color: transparent;
+                }
+            }
+            .tooltip:hover:not(.no-content) {
+                //background-color: white!important;
+                border-bottom-color: transparent;
+                h6,p,div{
+                    color: $deep-blue!important;
+                }
+            }
+        }
+        .tooltip {
+            min-height: 110px;
+            display: flex;
+            padding: 23px 30px 20px 30px;
+            transition: $transition;
+            border-bottom: solid 1px;
+            position: relative;
+            visibility: hidden;
+            .tooltip-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .tooltip-info {
+                width: 51px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: auto;
+                height: 100%;
+            }
+            .tooltip-title {
+                display: flex;
+                flex-direction: column;
+                padding-right: 20px;
+            }
+            h6 {
+                color: $white;
+            }
+            h6,p {
+                margin: 0;
+            }
+            &.calculated-height {
+                visibility: visible;
+                .tooltip-content {
+                    display: none;
+                }
+            }
+
+            &:hover:not(.no-content) {
+                cursor: pointer;
+                .tooltip-content {
+                    display: block;
+                }
+                .tooltip-text {
+                    width: 100%;
+                }
+                .tooltip-info {
+                    display: none;
+                }
+                &.solid {
+                    background-color: $white;
+                    color: $deep-blue!important;
+
+                }
+            }
+            &.no-content {
+                .tooltip-info {
+                    display: none!important;
+                }
+            }
+        }
+    }
+
+    .tooltip_container.tooltip_columns_1 {
+
+    }
+    @include media-breakpoint-up(lg){
+        .tooltip_container.tooltip_columns_2 {
+            margin-right: 30px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .tooltip {
+                flex: 0 50%;
+                &:nth-child(odd){
+                    border-right: solid 1px;
+                    border-right-color: rgba(255,255,255,0.25);
+                }
+                &:nth-last-child(2):nth-child(odd){
+                    border-bottom: none;
+                }
+                &:last-child:nth-child(odd){
+                    flex-grow: 0;
+                }
+            }
+        }
+    }
+
+}

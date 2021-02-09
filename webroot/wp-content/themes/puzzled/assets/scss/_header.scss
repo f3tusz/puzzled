@@ -1,0 +1,118 @@
+header {
+  position: absolute;
+  width: 100vw;
+  z-index: 1;
+  @include breakpoint(xs) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @include breakpoint(sm) {
+    padding-top: 50px;
+  }
+  .navbar {
+    .container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-brand {
+      display: block;
+      position: relative;
+      z-index: 1;
+      svg {
+        display: block;
+        width: 48px;
+        @include breakpoint(sm) {
+          width: 32px;
+        }
+
+      }
+    }
+    &-toggle {
+      align-items: center;
+      background-color: transparent;
+      border: 0;
+      display: flex;
+      height: 60px;
+      justify-content: center;
+      position: relative;
+      width: 60px;
+      z-index: 1;
+      @include breakpoint(sm) {
+        display: none;
+      }
+      svg {
+        display: block;
+        position: absolute;
+        width: 32px;
+        path {
+          fill: #fff;
+        }
+        &#menu-close {
+          opacity: 0;
+        }
+      }
+      &.collapsed {
+        svg {
+          &#menu-open {
+            opacity: 0;
+          }
+          &#menu-close {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    &-menu {
+      @include breakpoint(xs) {
+        background-image: url("../img/bg-menu.svg");
+        background-size: cover;
+        background-position: 50%;
+        box-sizing: border-box;
+        height: 100vh;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        padding: 120px 24px 36px;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+      }
+      
+      ul {
+        display: flex;
+        @include breakpoint(xs) {
+          flex-direction: column;
+        }
+        li {
+          a {
+            color: white;
+            font-family: 'Lexend Deca';
+            font-size: 21px;
+            line-height: 48px;
+            text-decoration: none;
+            text-transform: uppercase;
+            @include breakpoint(sm) {
+              font-size: 14px;
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+          }
+        }
+      }
+      
+
+    }
+    &.menu-open {
+      .navbar-brand {
+        svg {
+          filter: invert(0) sepia(0) saturate(1) hue-rotate(0deg) brightness(8);
+        }
+      }
+      .navbar-menu {
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
+  }
+}

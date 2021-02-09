@@ -1,0 +1,163 @@
+{
+    "key": "group_5ef4d11d77051",
+    "title": "Block &mdash; Highlights",
+    "fields": [
+        {
+            "key": "field_5ef4d12aed49f",
+            "label": "General Options",
+            "name": "general_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5eea91f766fa7",
+                "group_5eea90d641e50"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5ef4d142ed4a0",
+            "label": "Highlight Icons Color",
+            "name": "highlight_icons_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "#FFFFFF": "White",
+                "#C20DD1": "Magenta",
+                "#7311F2": "Purple",
+                "#3AD0F9": "Cyan",
+                "#F86864": "Orange",
+                "#000F8C": "Deep Blue",
+                "#0C3675": "Slate",
+                "#000255": "Dark Blue",
+                "#A0A6CA": "Gray",
+                "#DFE2F0": "Medium Gray",
+                "#F5F5F6": "Light Gray"
+            },
+            "default_value": "#FFFFFF",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5ef4d15aed4a1",
+            "label": "Highlights",
+            "name": "highlights",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5ef4d161ed4a2",
+                    "label": "Icon",
+                    "name": "highlights_icon",
+                    "type": "image",
+                    "instructions": "<em><b>Standard Display:<\/b> 70px by 70px<br \/>\r\n<b>Retina Display:<\/b> 140px by 140px<\/em>",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5ef4d169ed4a3",
+                    "label": "Title",
+                    "name": "highlights_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ef4d170ed4a4",
+                    "label": "Content",
+                    "name": "highlights_content",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/highlights"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1598999892
+}

@@ -1,0 +1,31 @@
+/node_modules
+/webroot/wp-content/themes/twenty*
+/webroot/wp-content/plugins/akismet
+/webroot/wp-content/plugins/hello.php
+/webroot/wp-admin
+/webroot/wp-includes
+/webroot/wp-content/uploads
+/webroot/wp-*.php
+!/webroot/wp-config.php
+/webroot/index.php
+/webroot/license.txt
+/webroot/readme.html
+/webroot/xmlrpc.php
+/webroot/local-config.php
+/webroot/npm-debug.log
+/webroot/.htaccess
+/webroot/wp-content/aiowps_backups
+.DS_Store
+thumbs.db
+.env
+
+# VSCode settings
+.vscode
+
+# User-specific PHP Storm
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+webroot/wp-content/debug.log

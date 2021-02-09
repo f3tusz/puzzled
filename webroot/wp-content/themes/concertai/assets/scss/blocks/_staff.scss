@@ -1,0 +1,90 @@
+.husl-block-staff {
+  .staff-member {
+    margin:20px 0;
+    h5,p {
+      margin-bottom: .3125rem;
+    }
+    h5 {
+      font-weight: bold;
+    }
+    a{
+      svg {
+        width: 16px;
+        path {
+          fill: $magenta;
+        }
+      }
+      &:hover {
+        svg {
+          path {
+            fill: $opaque-white;
+            stroke: none;
+          }
+        }
+      }
+    }
+  }
+  .linkedin-svg {
+    a:before {
+      content: none;
+    }
+    a:hover {
+      svg {
+        path {
+          fill: $gray;
+        }
+      }
+    }
+  }
+  .text-dark {
+    h2 {
+      color: $deep-blue;
+    }
+    .staff-member {
+      h5 {
+        color: $deep-blue
+      }
+      p {
+        color: #0C3675;
+      }
+      a {
+        transition: color 150ms ease-out;
+        .linkedin-svg {
+          svg {
+            path {
+              fill: $magenta;
+            }
+          }
+        }
+        &:hover {
+          svg {
+            path {
+              fill: $gray;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bg-basic {
+    .staff-member {
+      a {
+        svg path {
+          fill: $magenta;
+        }
+        &:hover {
+          svg path {
+            fill: $gray;
+          }
+        }
+      }
+    }
+  }
+
+  
+  @include media-breakpoint-down(sm){
+    [data-aos-delay] {
+      transition-delay: 0s !important;
+    }
+  }
+}

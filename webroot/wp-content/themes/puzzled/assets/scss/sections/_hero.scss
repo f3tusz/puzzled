@@ -1,0 +1,94 @@
+.hero {
+  background-image: radial-gradient(farthest-corner at 0px 0px, #ffffff 0%, #f1f3f7 29%, #e2e5f3 100%);
+  position: relative;
+  @include breakpoint(xs) {
+    padding-bottom: 90px;
+    padding-top: 180px;
+    .col-4 {
+      display: flex;
+      img {
+        margin-left: auto;
+        width: 60%;
+      }
+    }
+  }
+  @include breakpoint(md) {
+    height: 900px;
+  }
+  &:before {
+    background-image: url("../img/hero-bg.svg");
+    background-position: 40vw top;
+    background-repeat: no-repeat;
+    background-size: 60vw;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+  .container {
+    height: 100%;
+    .row {
+      align-items: center;
+      height: 100%;
+      justify-content: space-between;
+      position: relative;
+    }
+  }
+  h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    font-size: 32px;
+    @include breakpoint(md) {
+      font-size: 36px;
+      letter-spacing: .08rem;
+      line-height: 1.5;
+    }
+  }
+  fieldset {
+    background-color: white;
+    align-items: center;
+    border-radius: 70px;
+    border: 0;
+    box-shadow: 0 20px 48px -5px rgba(0,0,0,0.1);
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 0;
+    height: 70px;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 11px;
+    padding-left: 40px;
+    input {
+      border: none;
+      flex-grow: 1;
+      font-family: inherit;
+      font-size: 16px;
+      outline: none;
+    }
+    button {
+      align-items: center;
+      background: rgb(255,141,88);
+      background: linear-gradient(45deg, rgba(255,141,88,1) 0%, rgba(255,183,82,1) 100%);
+      border-radius: 48px;
+      border: 0;
+      box-shadow: 0 16px 24px rgba(255, 183, 82, 0.5);
+      display: flex;
+      height: 48px;
+      justify-content: center;
+      width: 48px;
+      svg {
+        display: block;
+        width: 20px;
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

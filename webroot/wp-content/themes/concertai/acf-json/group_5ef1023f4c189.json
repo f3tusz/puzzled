@@ -1,0 +1,586 @@
+{
+    "key": "group_5ef1023f4c189",
+    "title": "Block &mdash; Infographic",
+    "fields": [
+        {
+            "key": "field_5efcf8ef69780",
+            "label": "Section ID",
+            "name": "section_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ef10292fe588",
+            "label": "Row",
+            "name": "row",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5ef1126412d1b",
+                    "label": "NEW ROW START",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "new_lines": "",
+                    "esc_html": 0
+                },
+                {
+                    "key": "field_5ef103c4fe58a",
+                    "label": "Border Thickness",
+                    "name": "border_thickness",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "thin": "Thin Line",
+                        "thick": "Thick Line",
+                        "none": "none"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5ef1029efe589",
+                    "label": "Column Type",
+                    "name": "column_type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "col_1": "One Full-Width Column",
+                        "col_1_2": "1\/3 Column + 2\/3 Column",
+                        "col_2_1": "2\/3 Column + 1\/3 Column"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5ef105b8fe58b",
+                    "label": "Column 1",
+                    "name": "column_1",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ef1071efe58c",
+                            "label": "Column Label",
+                            "name": "column_label",
+                            "type": "wysiwyg",
+                            "instructions": "Usually a one-or-two word descriptor of this section.\r\n\r\nRecommended to use H5 here.\r\n\r\nNot required.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ef1029efe589",
+                                        "operator": "!=",
+                                        "value": "col_1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 1
+                        },
+                        {
+                            "key": "field_5ef10944fe58d",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "If you need to add a 'counting' number, use shortcode in the following format\r\n\r\n[counting_number number=\"10\" color=\"white\" size=\"large\"] \r\n\r\n'number' is the number you're counting to (\"10\")\r\n'color' is the color of the text (you can use color names 'white' or hex values '#FFFFFF')\r\n'size' is the text size ('small' 'regular' 'large')",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 1
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5ef10a51fe58f",
+                    "label": "Column 2",
+                    "name": "column_2",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ef1029efe589",
+                                "operator": "!=",
+                                "value": "col_1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ef10a51fe590",
+                            "label": "Column Label",
+                            "name": "column_label",
+                            "type": "wysiwyg",
+                            "instructions": "Usually a one-or-two word descriptor of this section.\r\n\r\nRecommended to use H5 here.\r\n\r\nNot required.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5ef10b0cfe595",
+                            "label": "Column Type",
+                            "name": "column_type",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "box": "Box with Background Color",
+                                "data": "Data sets",
+                                "editor": "WYSIWYG Editor"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5ef10b78fe596",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ef10b0cfe595",
+                                        "operator": "==",
+                                        "value": "box"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "#C20DD1": "Magenta",
+                                "#7311F2": "Purple",
+                                "#3AD0F9": "Cyan",
+                                "#F86864": "Orange",
+                                "#000F8C": "Deep Blue",
+                                "#0C3675: Slate": "#0C3675: Slate",
+                                "#000255": "Dark Blue",
+                                "#A0A6CA": "Gray",
+                                "#DFE2F0": "Medium Gray (dark text)",
+                                "#F5F5F6": "Light Gray (dark text)"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5ef10a51fe591",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "If you need to add a 'counting' number, use shortcode in the following format\r\n\r\n[counting_number number=\"10\" color=\"white\" size=\"large\"] \r\n\r\n'number' is the number you're counting to (\"10\")\r\n'color' is the color of the text (you can use color names 'white' or hex values '#FFFFFF')\r\n'size' is the text size ('small' 'regular' 'large')",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ef10b0cfe595",
+                                        "operator": "!=",
+                                        "value": "data"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 1
+                        },
+                        {
+                            "key": "field_5ef10be9fe597",
+                            "label": "Right Content",
+                            "name": "right_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ef1029efe589",
+                                        "operator": "==",
+                                        "value": "col_1_2"
+                                    },
+                                    {
+                                        "field": "field_5ef10b0cfe595",
+                                        "operator": "!=",
+                                        "value": "data"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 1
+                        },
+                        {
+                            "key": "field_5ef10ce5fe59a",
+                            "label": "Data Set Type",
+                            "name": "data_set_type",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ef10b0cfe595",
+                                        "operator": "==",
+                                        "value": "data"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "circle": "Circle with background color",
+                                "standard": "Standard (no background color)"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5ef10ccefe599",
+                            "label": "Data Sets",
+                            "name": "data_sets",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ef10b0cfe595",
+                                        "operator": "==",
+                                        "value": "data"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 3,
+                            "layout": "row",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5efcc96e62493",
+                                    "label": "Circle Size",
+                                    "name": "circle_size",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5ef10ce5fe59a",
+                                                "operator": "==",
+                                                "value": "circle"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "large": "Large",
+                                        "regular": "Regular"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "regular",
+                                    "layout": "vertical",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                },
+                                {
+                                    "key": "field_5ef10d89fe59b",
+                                    "label": "Background Color",
+                                    "name": "background_color",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5ef10ce5fe59a",
+                                                "operator": "==",
+                                                "value": "circle"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "#C20DD1": "Magenta",
+                                        "#7311F2": "Purple",
+                                        "#3AD0F9": "Cyan",
+                                        "#F86864": "Orange",
+                                        "#000F8C": "Deep Blue",
+                                        "#737BA8": "Slate",
+                                        "#F5F5F6": "Light Gray",
+                                        "transparent": "none"
+                                    },
+                                    "default_value": "#3AD0F9",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5ef10dbafe59c",
+                                    "label": "Content",
+                                    "name": "content",
+                                    "type": "wysiwyg",
+                                    "instructions": "If you need to add a 'counting' number, use shortcode in the following format\r\n\r\n[counting_number number=\"10\" color=\"white\" size=\"large\"] \r\n\r\n'number' is the number you're counting to (\"10\")",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 1
+                                },
+                                {
+                                    "key": "field_5efccd3b881b8",
+                                    "label": "Use Small Text",
+                                    "name": "use_small_text",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5ef10ce5fe59a",
+                                                "operator": "==",
+                                                "value": "circle"
+                                            },
+                                            {
+                                                "field": "field_5efcc96e62493",
+                                                "operator": "==",
+                                                "value": "large"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5efe19440e6c9",
+                                    "label": "Extra room?",
+                                    "name": "extra_room",
+                                    "type": "true_false",
+                                    "instructions": "Check this box if your content is still too big for the circle. This will nudge things slightly to the left.",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5ef10ce5fe59a",
+                                                "operator": "==",
+                                                "value": "circle"
+                                            },
+                                            {
+                                                "field": "field_5efcc96e62493",
+                                                "operator": "==",
+                                                "value": "large"
+                                            },
+                                            {
+                                                "field": "field_5efccd3b881b8",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/infographics"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1593710997
+}

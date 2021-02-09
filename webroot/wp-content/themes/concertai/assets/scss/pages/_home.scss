@@ -1,0 +1,23 @@
+body.home {
+  background-repeat: no-repeat;
+  background-size:100% auto;
+  
+/*  @include media-breakpoint-down(md){
+    background-image:none!important;
+    background-color:$dark-blue;
+  }*/
+  nav.dark {
+    background:transparent;
+  }
+  nav.dark.scrolling {
+    background:$dark-blue;
+  }
+  @include media-breakpoint-down(lg){
+    background-size:auto;
+    background-position: top center;
+  }
+  @include media-breakpoint-down(xs){
+    background-image: none!important;
+    background-color: $dark-blue;
+  }
+}

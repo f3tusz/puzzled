@@ -1,0 +1,121 @@
+@keyframes sentence {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.animate-sentence {
+    display: none;
+    &.animating {
+        display: block;
+    }
+}
+.animate-sentence.animating span {
+    animation-name: sentence;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    &:nth-of-type(1){
+        animation-delay: 0;
+    }
+    &:nth-of-type(2){
+        animation-duration: .2s;
+        animation-delay: .2s;
+    }
+    &:nth-of-type(3){
+        animation-duration: .2s;
+        animation-delay: .4s;
+    }
+    &:nth-of-type(4){
+        animation-duration: .2s;
+        animation-delay: .6s;
+    }
+    &:nth-of-type(5){
+        animation-duration: .2s;
+        animation-delay: .8s;
+    }
+    &:nth-of-type(6){
+        animation-duration: .2s;
+        animation-delay: 1s;
+    }
+}
+
+
+@keyframes slidenav {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: translateY(0);
+    }
+}
+.navbar.fixed {
+    animation-name: slidenav;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-duration: .25s;
+    animation-delay: 0;
+}
+
+
+@keyframes slidesubnav-adminbar-heronav {
+    0% {
+        top: 32px;
+    }
+    100% {
+        top: 112px;
+    }
+}
+@keyframes slidesubnav-adminbar-only {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 32px;
+    }
+}
+@keyframes slidesubnav-noadmin-heronav {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 80px;
+    }
+}
+.subnavigation.fixedNav {
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-duration: .25s;
+        animation-delay: 0;
+}
+
+body:not(.admin-bar){
+    .navbar.fixed ~ .global-main .subnavigation.fixedNav {
+        animation-name: slidesubnav-noadmin-heronav;
+    }
+}
+body.admin-bar {
+    .navbar.fixed ~ .global-main .subnavigation.fixedNav {
+        animation-name: slidesubnav-adminbar-heronav;    
+    }
+    .navbar:not(.fixed) ~ .global-main .subnavigation.fixedNav {     
+        animation-name: slidesubnav-adminbar-only;
+    }
+}
+
+
+.navbar.fixed ~ .global-main .subnavigation.fixedNav {
+    // top: 80px;
+ }
+ body.admin-bar {
+     .navbar.fixed ~ .global-main .subnavigation.fixedNav {
+        //top: 112px;
+     }
+     .navbar:not(.fixed) ~ .global-main .subnavigation.fixedNav {
+         //top: 32px;
+     }
+ }

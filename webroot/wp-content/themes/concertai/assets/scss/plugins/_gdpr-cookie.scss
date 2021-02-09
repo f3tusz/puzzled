@@ -1,0 +1,39 @@
+#cookie-law-info-bar {
+    font-size: 13px;
+    line-height: 1;
+    text-align: left;
+    width: auto;
+    padding: 12px 64px 12px 20px;
+    a {
+        text-decoration: underline;
+        font-weight: bold !important;
+        margin: 0;
+        &:before {
+            display: none !important;
+        }
+        &:hover {
+            color: $gray-medium;
+        }
+        &.cli-plugin-main-link {
+            margin: 0 !important;
+        }
+        &.cli_action_button {
+            position: static;
+            // padding-right: 30px;
+            &:after {
+                background-image: url("../img/menu-close.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 20px;
+                content: '';
+                display: block;
+                height: 24px;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 24px;
+            }
+        }
+    }
+}

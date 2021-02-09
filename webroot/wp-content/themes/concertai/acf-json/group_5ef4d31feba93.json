@@ -1,0 +1,64 @@
+{
+    "key": "group_5ef4d31feba93",
+    "title": "Block &mdash; Content With Form",
+    "fields": [
+        {
+            "key": "field_5ef4d330f125a",
+            "label": "General Options",
+            "name": "general_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5eea91f766fa7"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5ef4d347f125b",
+            "label": "Form Embed Code",
+            "name": "hubspot_form_embed_code",
+            "type": "textarea",
+            "instructions": "For GoToWebinar, use the following shortcode (you will need to replace the webinar key numbers):<br \/>\r\n<pre>[gotowebinar-reg key=\"6193203062436590604\"]<\/pre>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/content-with-form"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1599168993
+}

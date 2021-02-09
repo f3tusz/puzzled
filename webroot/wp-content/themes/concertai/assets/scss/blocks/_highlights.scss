@@ -1,0 +1,42 @@
+.husl-block-highlights{
+    .titles {
+        margin-bottom: 3rem;
+    }
+    @include media-breakpoint-up(sm){
+        .center-sm {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    .highlight {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        > div {
+            z-index: 1; // so it shows above frames
+        }
+    }
+    .highlight-icon {
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+            max-width: 75px;
+        }
+    }
+    .highlight-content {
+        p {
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+    .col-4 {
+        padding: 0 40px;
+    }
+    @include media-breakpoint-down(sm){
+        [data-aos-delay] {
+          transition-delay: 0s !important;
+        }
+      }
+}

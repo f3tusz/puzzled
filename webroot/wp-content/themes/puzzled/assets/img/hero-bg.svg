@@ -1,0 +1,27 @@
+<svg id="a1e3d82e-c63d-4e0f-aa3b-048590a12220" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="833.82mm" height="587.89mm" viewBox="0 0 2363.57 1666.45">
+  <defs>
+    <linearGradient id="fe3545aa-8a71-4efd-82cc-6a75dbb9ff6b" data-name="Degradado sin nombre 306" x1="648.81" y1="-397.9" x2="2510.87" y2="1464.15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3f65d7"/>
+      <stop offset="0.52" stop-color="#5647d4"/>
+      <stop offset="1" stop-color="#692bd3"/>
+    </linearGradient>
+    <radialGradient id="b704c9bb-860f-45c9-9366-7d5ad8599956" data-name="Degradado sin nombre 324" cx="1347.2" cy="16.93" r="1307.16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5f59d7"/>
+      <stop offset="1" stop-color="#5f59d7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fe0134c0-d7fe-4d2e-be09-e35525093d06" data-name="Degradado sin nombre 338" x1="2182.15" y1="631.75" x2="2255.72" y2="1298.18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6c3cd4"/>
+      <stop offset="0.11" stop-color="#6c3cd4" stop-opacity="0.93"/>
+      <stop offset="0.32" stop-color="#6c3cd4" stop-opacity="0.74"/>
+      <stop offset="0.62" stop-color="#6c3cd4" stop-opacity="0.44"/>
+      <stop offset="0.98" stop-color="#6c3cd4" stop-opacity="0.03"/>
+      <stop offset="1" stop-color="#6c3cd4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <title>background</title>
+  <g>
+    <path d="M0,0V194.08S0,301,96.56,357.89c75.22,44.35,2267,1308.56,2267,1308.56V0Z" style="fill: url(#fe3545aa-8a71-4efd-82cc-6a75dbb9ff6b)"/>
+    <path d="M0,0V194.08S0,301,96.56,357.89c27,15.94,327.5,189.47,701.35,405.24,99.23-62,299.76-189,361.9-241.83,83.72-71.11,130.61-215.74,130.61-215.74L1364.64,0Z" style="fill: url(#b704c9bb-860f-45c9-9366-7d5ad8599956)"/>
+    <path d="M2362.59,596.43a271.13,271.13,0,0,0-50.42-4.73c-149,0-269.69,120.74-269.69,269.69v160c0,148.94,120.74,269.68,269.69,269.68a271.13,271.13,0,0,0,50.42-4.73Z" style="fill: url(#fe0134c0-d7fe-4d2e-be09-e35525093d06)"/>
+  </g>
+</svg>

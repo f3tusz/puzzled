@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="ec7dfc1b-0342-48e9-8e9b-e73c057c3d10"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64"
+	 style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<title>puzzle</title>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="5.6507" y1="47.9281" x2="48.088" y2="5.5002" gradientTransform="matrix(1 0 0 -1 -1.414956e-02 65.9938)">
+	<stop  offset="0" style="stop-color:#5B5EF2"/>
+	<stop  offset="1" style="stop-color:#5B2BD2"/>
+</linearGradient>
+<path class="st0" d="M54.4,28.2h-2.9v-8.1c0-2.9-2.4-5.3-5.3-5.3h-8.8V7.4c0-2.9-2.3-5.3-5.3-5.3H19.3c-2.9,0-5.3,2.4-5.3,5.3
+	c0,0,0,0,0,0v7.5H5.3c-2.9,0-5.3,2.4-5.3,5.3c0,0,0,0,0,0v8.1h2c5.5,0.2,9.8,4.7,9.6,10.2c-0.2,5.2-4.4,9.4-9.6,9.6H0v8.1
+	c0,2.9,2.4,5.3,5.3,5.3h10.5v-2.9C16,53,20.6,48.7,26,48.9c5.2,0.2,9.4,4.4,9.6,9.6v2.9h10.5c2.9,0,5.3-2.4,5.3-5.3v-8.1h2.9
+	c5.5-0.2,9.8-4.7,9.6-10.2C63.8,32.6,59.6,28.4,54.4,28.2z M32.1,14.9H19.4V9.2c0-1.5,1.2-2.7,2.7-2.7h7.4c1.5,0,2.6,1.2,2.6,2.7
+	V14.9z"/>
+</svg>

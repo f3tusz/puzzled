@@ -1,0 +1,62 @@
+{
+    "key": "group_5ef4cfa7ebac4",
+    "title": "Block &mdash; Subnav",
+    "fields": [
+        {
+            "key": "field_5ef4cfdcfb808",
+            "label": "Subnav Type",
+            "name": "subnavigation",
+            "type": "radio",
+            "instructions": "<b>Regular Subnav:<\/b> Regular links out to other pages<br \/>\r\n<B>Sticky Subnav:<\/b> Anchor links on same page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "basic": "Separate Page menu",
+                "sticky": "In Page Menu (sticky)"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5ef4d04efcc58",
+            "label": "Subnav",
+            "name": "subnavigation_menu",
+            "type": "menu-chooser",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/subnav"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1593711838
+}

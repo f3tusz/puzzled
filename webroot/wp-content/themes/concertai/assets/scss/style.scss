@@ -1,0 +1,171 @@
+/* 
+==========================================================================
+  Made with ❤ by the HUSL team.
+========================================================================== 
+*/
+
+@import "variables";
+@import "base/init";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+// Vendor
+@import "~bootstrap/scss/vendor/rfs";
+
+// Deprecate
+@import "~bootstrap/scss/mixins/deprecate";
+
+// Utilities
+@import "~bootstrap/scss/mixins/breakpoints";
+@import "~bootstrap/scss/mixins/hover";
+@import "~bootstrap/scss/mixins/image";
+@import "~bootstrap/scss/mixins/badge";
+@import "~bootstrap/scss/mixins/resize";
+@import "~bootstrap/scss/mixins/screen-reader";
+@import "~bootstrap/scss/mixins/size";
+@import "~bootstrap/scss/mixins/reset-text";
+@import "~bootstrap/scss/mixins/text-emphasis";
+@import "~bootstrap/scss/mixins/text-hide";
+@import "~bootstrap/scss/mixins/text-truncate";
+@import "~bootstrap/scss/mixins/visibility";
+@import "utilities/utility-classes";
+
+// Components
+@import "~bootstrap/scss/mixins/alert";
+@import "~bootstrap/scss/mixins/buttons";
+@import "~bootstrap/scss/mixins/caret";
+@import "~bootstrap/scss/mixins/pagination";
+@import "~bootstrap/scss/mixins/lists";
+@import "~bootstrap/scss/mixins/list-group";
+@import "~bootstrap/scss/mixins/nav-divider";
+@import "~bootstrap/scss/mixins/forms";
+@import "~bootstrap/scss/mixins/table-row";
+
+// Skins
+@import "~bootstrap/scss/mixins/background-variant";
+@import "~bootstrap/scss/mixins/border-radius";
+@import "~bootstrap/scss/mixins/box-shadow";
+@import "~bootstrap/scss/mixins/gradients";
+@import "~bootstrap/scss/mixins/transition";
+
+// Layout
+@import "~bootstrap/scss/mixins/clearfix";
+@import "~bootstrap/scss/mixins/grid-framework";
+@import "extends/grid";
+@import "~bootstrap/scss/mixins/float";
+
+@import "~bootstrap/scss/root";
+@import "extends/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+//@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
+
+
+//Base
+@import "base/typography";
+@import "base/grid-offsets";
+@import "base/grid-custom";
+
+//Mixins
+@import "utilities/mixins";
+@import "utilities/animations";
+@import "components/all";
+
+@import "utilities/dark-background-overrides";
+
+//Pages
+@import "pages/home";
+@import "pages/blog-news";
+@import "pages/job-detail";
+@import "pages/job-app";
+@import "pages/publications-landing";
+
+//Blocks
+@import "blocks/init";
+@import "blocks/announcement";
+@import "blocks/box-ctas";
+@import "blocks/slider";
+@import "blocks/list-ctas";
+@import "blocks/large-ctas";
+@import "blocks/data-results";
+@import "blocks/hero";
+@import "blocks/columns";
+@import "blocks/staff";
+@import "blocks/wide-content";
+@import "blocks/tabs";
+@import "blocks/infographic";
+@import "blocks/tooltips";
+@import "blocks/highlights";
+@import "blocks/featured-media";
+@import "blocks/subnavigation";
+@import "blocks/open-jobs";
+@import "blocks/eureka";
+
+//Elements
+@import "elements/cta";
+@import "elements/forms";
+@import "elements/menus";
+@import "elements/modal";
+@import "elements/pagination";
+
+
+
+//Plugins
+@import "plugins/gdpr-cookie";
+
+
+/*.block-slider, .block-large-ctas, .block-data-results, .block-list-ctas, .block-announcement {
+  display: none!important;
+}*/
+
+#wpadminbar {
+	a,a:before {
+		border: none!important;
+		width: auto!important;
+	}
+}
+
+
+// Uncomment this to test the 1290 grid
+/*
+body:before {
+	content: '';
+    position: absolute;
+	border-left: solid 3px yellow;
+	border-right: solid 3px yellow;
+    z-index: 9999;
+    height: 100%;
+    width: 1296px;
+    margin: 0px auto;
+    left: 303.5px; // change this as needed to center it
+}*/

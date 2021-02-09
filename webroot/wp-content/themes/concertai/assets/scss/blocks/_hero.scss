@@ -1,0 +1,90 @@
+.husl-block.block-hero {
+    .hero-dark-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #000255;
+        width: 100%;
+        height: 50%;
+    }
+    .hero-dark-bg-white-container {
+        @include subnav-width();
+        background-color: white;
+        position: relative;
+        top: 0;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .subnavigation {
+        @include subnav-width();
+    }
+    .hero-color-bars {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: $magenta;
+        width: 100%;
+        height: 50%;
+    }
+    .hero-color-bars-og-bg {
+        background-color: white!important; // BH#237
+        position: relative;
+        top: 0;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .container.bg-image,.container-fluid.bg-image,
+    .container-fluid.bg-solid {
+        position: relative;
+        @include subnav-width();
+    }
+    .bg-solid {
+        h6 {
+            color: $gray-lighter;
+        }
+        h1,h2 {
+            color: $white;
+        }
+    }
+    .bg-image {
+        h6 {
+            color: $cyan;
+        }
+        h1,h2 {
+            color: $white;
+        }
+    }
+    .hero-title-container {
+        padding-left: 0;
+        padding-right: 0;
+        h1 {
+            margin-bottom: 0;
+        }
+        // @include media-breakpoint-down(md){
+        //     padding-left: 30px;
+        //     padding-right: 30px;
+        // }
+        // @include media-breakpoint-down(lg){
+        //     padding-left: 50px;
+        //     padding-right: 50px;
+        // }
+        // @include media-breakpoint-down(xl){
+        //     padding-left: 80px;
+        //     padding-right: 80px;
+        // }
+        // @include media-breakpoint-up(xl){
+        //     margin-left: auto;
+        //     margin-right: auto;
+        //     max-width: 1290px;
+        // }
+    }
+    > .container-fluid {
+        &.bg-image, &.bg-solid {
+            @include media-breakpoint-up(md){
+                min-height: 285px;
+            }
+            display: flex;
+            align-items: center;
+        }
+    }
+}

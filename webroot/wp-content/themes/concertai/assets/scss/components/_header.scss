@@ -1,0 +1,283 @@
+@include media-breakpoint-up(md){
+  body.admin-bar nav.navbar.fixed {
+    top: 32px!important;
+  }
+}
+html.noscroll {
+  .navbar {
+    background: $deep-blue!important;
+  }
+  .tagline {
+    display: none!important;
+  }
+}
+#hs-eu-cookie-confirmation {
+  display:none!important;
+} 
+nav.navbar {
+  padding: 0;
+  .container-fluid {
+    padding: 10px 30px;
+    @include media-breakpoint-up(md){
+      padding: 40px 50px;
+    //   padding-top: 40px;
+    //   padding-bottom: 40px;
+    }
+    @include media-breakpoint-up(lg){
+      padding-left: 80px;
+      padding-right: 80px;
+    }/*
+    @include media-breakpoint-up(xl){
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }*/
+  }
+  &.is-fixed-top.scrolling {
+    .container-fluid {
+      padding-top:0;
+      padding-bottom:0;
+    }
+  }
+  &.dark {
+    background-color: $dark-blue;
+  }
+  .nav-svg > svg {
+    path,line {
+      transition: all $transition;
+    }
+  }
+  &.light:not(.fixed) {
+    #navbar-menu {
+      .nav-svg > svg {
+        path, line {
+          stroke: $dark-blue;
+        }
+      }
+      #close-svg.active svg {
+        path, line {
+          stroke: $white;
+        }
+      }
+      #search-svg.aside svg {
+        path, line {
+          stroke: $white;
+        }
+      }
+    }
+    #navlogo .light {
+      display: none;
+    }
+  }
+  .navbar-brand {
+    flex-wrap: nowrap;
+    transition: all $transition;
+    z-index: 11;
+    .tagline {
+      display: none;
+    }
+    @include media-breakpoint-down(lg){
+      > .container {
+        max-width: 50%;
+        margin: 0;
+        padding: 0;
+        //padding-left: 20px; 
+      }
+      > #navbar-menu {
+        max-width: 50%;
+      } 
+    }
+    @include media-breakpoint-up(lg){
+      flex-wrap: wrap;
+      .tagline {
+        display: inline-block;
+      }
+    }
+  }
+  &.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $dark-blue;
+    padding:10px 0;
+    z-index: 101;
+    #navlogo img.dark {
+      display: none!important;
+    }
+    #navlogo img.light {
+      display: block!important;
+    }
+    .tagline {
+      display: none!important;
+    }
+  }
+  .fixed #menu-trigger {
+    right: 0;
+  }
+  #navlogo {
+    z-index: 11; // to show above the popout menu
+    /*padding-left:65px;
+    @include media-breakpoint-down(md){
+      padding-left:35px;
+    }
+    @include media-breakpoint-down(sm){
+      padding-left:15px;
+    }*/
+    &.dark {
+      img.dark {
+        display: none;
+      }
+    }
+    &.light {
+      img.light {
+        display: none;
+      }
+    }
+    &:before {
+      content: none;
+    }
+    @include media-breakpoint-down(md){
+      img {
+        max-width:175px;
+      }
+    }
+    @include media-breakpoint-down(sm){
+      img {
+        max-width:135px;
+      }
+    }
+  }
+  .navbar-menu {  
+    display:none;
+  }
+  .tagline {
+    padding-left: 50px;
+    font-size: 1.1875rem;
+    margin: 3px 0 0 0;
+  }
+  #navbar-menu {
+    //padding-right: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    > div:last-child(){
+      margin-left: 20px;
+    }
+    @include media-breakpoint-up(sm){
+      > div {
+        margin-left: 15px;
+      }
+    }
+    @include media-breakpoint-up(md){
+      > div {
+        margin-left: 30px;
+      }
+    }
+    .nav-svg {
+      align-items: center;
+      display: flex;
+      height: 36px;
+      justify-content: center;
+      position: relative;
+      width: 36px;
+      z-index: 11;
+      &.hidden,
+      &#search-svg.active,
+      &#hamburger-svg.active {
+        display: none;
+      }
+      &#close-svg {
+        display: none;
+        &.active {
+          display: flex;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        path,line {
+          stroke: $cyan!important;
+        }
+      }
+    }
+  }
+}
+
+.navbar.fixed ~ main {
+  margin-top: 80px;
+  @include media-breakpoint-up(lg){
+   // margin-top: 140px; https://www.bugherd.com/projects/202699/tasks/481
+  }
+}
+@include media-breakpoint-down(md){
+  #popouts {
+    position: absolute;
+    z-index: 100000; // ¯\_(ツ)_/¯
+    width: 100%;
+  }
+}
+
+.popout-menu {
+  transition: all $transition;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  background-color: $deep-blue;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding:  25px 25px 200px 25px;
+  margin-top: 86px;
+  @include media-breakpoint-down(sm){
+    margin-top:57px;
+  }
+  @include media-breakpoint-up(lg){
+    margin-top: 0;
+    padding: 200px 80px 50px 80px;
+  }
+  ul.menu {
+    li.menu-item {
+        a {
+          font-size: 20px;
+          margin-bottom: 12px;
+          line-height: 150%;
+          padding: 0;
+          display:block;
+          @include media-breakpoint-up(md){
+            font-size: 22px;
+            margin-bottom: 16px;
+          }
+      }
+    }
+  }
+  ul.sub-menu li.menu-item {
+    padding: 0!important;
+  }
+}
+#popouts.hamburger #popout-menu-container,
+#popouts.search #popout-search-container {
+  opacity: 1;
+  height: 100vh;
+  visibility: visible;
+  transform: translateY(0);
+  -webkit-overflow-scrolling: touch;
+  @include media-breakpoint-down(sm){
+    z-index:999;
+  }
+}
+#popouts.hamburger #popout-menu-container {
+  overflow-y: scroll;
+}
+html.noscroll {
+  #navlogo img.dark {
+    display: none!important;
+  }
+  #navlogo img.light {
+    display: inline!important;
+  }
+}
+.hs-submit .actions .hs-button.search-button {
+  color: $white;
+  &:hover {
+    color: $cyan;
+  }
+}

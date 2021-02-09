@@ -1,0 +1,94 @@
+.dark-bg {
+    body,p,li,h1,h2,h3,h4,h5,h6 {
+        color: $white;
+    }
+    ul li:before, ol li:before {
+        color: $white;
+    }
+    a {
+        color: $white-link-color;
+        &:before{
+            border-color: $white-link-border;
+        }
+        &:hover {
+            color: $white-link-color-hover;
+            &:before {
+                border-color: $white-link-border-hover;
+            }
+        }
+    }
+    a.cta {
+        color: $white-link-cta-color;
+        //svg path {
+        //    stroke: $white-link-cta-border;
+        //}
+        svg polygon {
+            fill: $white-link-cta-border;
+        }
+        &:before{
+            border-color: $white-link-cta-border;
+        }
+        &:hover {
+            color: $white-link-cta-color-hover;
+            //svg path {
+            //    stroke: $white-link-cta-border-hover;
+            //}
+            svg polygon {
+                fill: $white-link-cta-border-hover!important;
+            }
+            &:before {
+                border-color: $white-link-cta-border-hover;
+            }
+        }
+
+
+    }
+    ol {
+        > li:before {
+            color: $white;
+        }
+    }
+    ul {
+        > li:before{
+            filter: brightness(100);
+        }
+    }
+    h6 {
+        color: $opaque-white;
+    }
+    
+    blockquote p {
+        color: $white;
+    }
+    blockquote:before {
+        filter: $filter-to-white;
+    }
+    figcaption {
+        color: $white;
+    }
+    .wide-content-image {
+        .magnifier:after {
+            filter: brightness(0) invert(100%);
+        }
+        .modal.show .modal-svg line {
+            stroke: $magenta;
+        }
+    }
+
+    .search-form .hs-submit .actions {
+        input.search-button {
+            color: $white!important;
+        }
+        &:hover {
+            input.search-button {
+                color: $gray-medium!important;
+            }
+        }
+    }
+
+    .staff-member {
+        .linkedin-svg svg path {
+            fill: $white;
+        }
+    }
+}

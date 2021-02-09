@@ -1,0 +1,143 @@
+@import url("https://use.typekit.net/vmq3vyq.css");
+
+// Variables
+
+$white: #fff;
+$black: #000;
+
+$magenta: #C20DD1;
+$deep-blue: #000F8C;
+$cyan: #3AD0F9;
+$orange: #F86864;
+$purple: #7311F2;
+
+// secondary
+$dark-blue: #000255;
+$slate: #18325A;
+$gray: #A0A6CA;
+$gray-medium: #DFE2F0;
+$gray-light: #F5F5F6;
+
+//other
+$deep-slate: #0C3675;
+$gray-lighter: rgba(255,255,255,0.6);
+$opaque-white: rgba(255,255,255,0.6);
+$opaque-white-lighter: rgba(255,255,255,0.25);
+$brand-primary: $magenta;
+$brand-primary-darken: $magenta;
+$brand-secondary: $magenta;
+$brand-warning: $orange;
+
+$font-family-sans-serif: 'circe', sans-serif;
+$font-family-body: $font-family-sans-serif;
+$body-color: $deep-slate;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-bold: 700;
+$weight-thick: 800;
+
+$h1-font-size: 3.375rem; //80px
+$h2-font-size: 2.5rem; //54px
+$h3-font-size: 2.125rem; //38px
+$h4-font-size: 1.75rem; //28px
+$h5-font-size: 1.5rem; //24px
+$h6-font-size: 1rem; //16px
+$h1-font-size-desktop: 5rem; //80px
+$h2-font-size-desktop: 3.375rem; //54px
+$h3-font-size-desktop: 2.375rem; //38px
+
+$line-height-h1: 105%;
+$line-height-h2: 115%;
+$line-height-h3: 120%;
+$line-height-h4: 135%;
+$line-height-h5: 130%;
+$line-height-h6: 130%;
+
+$headings-margin-bottom: 20px;
+
+
+$cta-small-font-size: 18px;
+$cta-large-font-size: 23px;
+$cta-small-line-height: 140%;
+$cta-large-line-height: 140%;
+
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1290px);
+
+$container-max-widths: (sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 1450px);
+
+
+$primary-link-color: $magenta;
+$primary-link-border: $cyan;
+$primary-link-color-hover: $gray;
+$primary-link-border-hover: $gray-medium;
+
+$white-link-color: $white;
+$white-link-border: $white;
+$white-link-color-hover: $opaque-white;
+$white-link-border-hover: $opaque-white;
+
+$white-link-cta-color: $white;
+$white-link-cta-border: $opaque-white;
+$white-link-cta-color-hover: $white;
+$white-link-cta-border-hover: $white;
+
+$filter-reset : brightness(0) saturate(100%);
+$filter-to-gray-medium: $filter-reset invert(100%) sepia(13%) saturate(6824%) hue-rotate(178deg) brightness(101%) contrast(88%);
+$filter-to-white: $filter-reset invert(100%);
+
+$border-width: 2px;
+
+$a-border-width: 2px;
+$link-border: solid $a-border-width;
+
+$link-decoration: none;
+$link-hover-decoration: none;
+
+$card-border-width: 0;
+
+$border-radius: 12px;
+
+$navbar-padding-y: 0.7699rem;
+
+$input-bg: transparent;
+
+$input-border-width: 2px;
+
+$btn-font-weight: 700;
+
+$input-border-color: $white;
+
+$btn-padding-y: .53125rem;
+
+$btn-padding-x: 30px;
+
+$btn-border-width: .125rem;
+
+$card-spacer-x: 2.5rem;
+
+$spacer: 1rem;
+
+$spacers: (
+  1: .625rem,
+  2: 1.25rem,
+  3: 1.875rem,
+  4: 2.5rem,
+  5: 3.125rem,
+  6: 3.75rem,
+  7: 4.375rem,
+  8: 5rem,
+  9: 5.625rem,
+  10: 6.25rem,
+  '25': 25px,
+  '50': 50px,
+  '100': 100px,
+);
+
+$transition: 0.2s linear;

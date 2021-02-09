@@ -1,0 +1,255 @@
+.block-open-jobs {
+  .open-jobs-filter {
+    margin: 50px 0;
+  }
+    #lever-jobs-filter {
+        display: flex;
+        @include media-breakpoint-down(md){
+          flex-wrap: wrap;
+        }
+        #filter-labels {
+          display: flex;
+          flex-wrap: wrap;
+          h6,a {
+            align-self: center;
+            margin-bottom: 0;
+            width: 100%;
+            text-align: right;
+            @include media-breakpoint-down(md){
+              text-align: center;
+              margin-bottom: 20px;
+            }
+            color: $dark-blue;
+          }
+          a#lever-clear-filters {
+            color: $magenta;
+            &:before {
+              content: none;
+            }
+          }
+        }
+        #new-list {
+          &.no-padding {
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+        select {
+            font-size: 20px;
+            background-color: $purple;
+            background-image: url(../img/down-arrow-white.svg);
+            background-size: 13px 14px;
+            color: $white;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-right: 40px;
+            margin-bottom: 0;
+            border: 0!important;
+            text-overflow: ellipsis;
+            @include media-breakpoint-down(md){
+              margin-bottom: 25px;
+              &:last-child(){
+                margin-bottom: 0;
+              }
+            }
+            &:hover {
+              background-color: $deep-slate;
+            }
+            option {
+                background-color: $gray;
+            }
+        }
+    }
+    #jobs-list {
+      background: $gray-light;
+      .lever-team {
+        padding: 50px 0;
+        border-bottom: solid 2px $gray-medium;
+        li:before {
+          content: none;
+        }
+        h4.lever-team-title {
+          font-size: $h3-font-size;
+          line-height: $line-height-h3;
+          letter-spacing: -1px;
+          @include media-breakpoint-up(md){
+            font-size: $h3-font-size-desktop;
+          }
+        }
+        li.lever-job {
+          padding: 17px 0;
+        }
+        a.lever-job-title {
+          color: $deep-slate;
+          font-size: $h4-font-size;
+          line-height: $line-height-h4;
+          text-decoration: none;
+          margin-bottom: 0;
+          display: inline-block;
+          flex: 0 0 71.962616%;
+          @include media-breakpoint-down(md){
+            flex-grow: 1;
+          }
+          &:before {
+            content: none;
+          }
+          span {
+            position: relative;
+            &:before {
+              background-color: $cyan;
+              content: '';
+              height: 2px;
+              left: 0;
+              opacity: 0;
+              position: absolute;
+              top: 34px;
+              transition: opacity $transition;
+              width: 100%;
+            }
+          }
+          &:hover {
+            color: $magenta;
+            span {
+              &:before {
+                opacity: 1;
+              }
+            }
+          }
+          
+        }
+        .lever-job-tag {
+          flex: 0 0 100%;
+          span {
+            padding-right: 20px;
+            font-size: $h6-font-size;
+            line-height: $line-height-h6;
+            letter-spacing: 0.1em;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: $gray;
+            @include media-breakpoint-down(md){
+              max-width: 75%;
+              &:nth-child(2){
+                display: none;
+              }
+            }
+            &:last-child(){
+              padding-right: 0;
+            }
+          }
+        }
+        .lever-job-apply {
+          align-self: flex-end;
+        }
+      }
+    }
+
+    // old stuff
+    .selected {
+        background: coral;
+        border:1px solid salmon;
+      }
+      #new-list {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        font-family: Helvetica, sans-serif;
+        color: #2c2e2f;
+        font-size: 16px;
+      }
+      #new-list ul,
+      #new-list li,
+      #new-list h1,
+      #new-list h2,
+      #new-list h3,
+      #new-list h4,
+      #new-list h5,
+      #new-list h6,
+      #new-list p,
+      #new-list span {
+        margin: 0;
+        padding: 0;
+      }
+      #new-list * {
+        box-sizing: border-box;
+      }
+      #new-list ul {
+        list-style-type: none;
+      }
+      #lever-jobs-search {
+        font-size: 1em;
+        padding: 0.5em;
+        border-radius: 3px;
+        border: 1px solid #E3E4E6;
+        margin-bottom: 1em;
+      }
+      #lever-clear-filters {
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 0.75em;
+      }
+      
+      #lever-jobs-container {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        font-family: Helvetica, sans-serif;
+        color: #2c2e2f;
+        font-size: 16px;
+      }
+      #lever-jobs-container ul,
+      //#lever-jobs-container li,
+      #lever-jobs-container h1,
+      #lever-jobs-container h2,
+      #lever-jobs-container h3,
+      #lever-jobs-container h4,
+      #lever-jobs-container h5,
+      #lever-jobs-container h6,
+      #lever-jobs-container p,
+      #lever-jobs-container span {
+        margin: 0;
+        padding: 0;
+      }
+      #lever-jobs-container * {
+        box-sizing: border-box;
+      }
+      #lever-jobs-container ul {
+        list-style-type: none;
+      }
+      #lever-jobs-container li.lever-job {
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        padding: 0.2em 0;
+        background: none;
+      }
+      #lever-jobs-container .lever-department {
+        margin-bottom: 3em;
+      }
+      #lever-jobs-container .lever-team-title {
+        font-size: 1.25em;
+        margin-bottom: 0.5em;
+      }
+      #lever-jobs-container .lever-department-title {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+      }
+      @media (max-width: 767px) {
+        #lever-jobs-container .lever-job-tag,
+        #lever-jobs-container .lever-job-title {
+          flex: 0 0 100%;
+        }
+        #lever-jobs-container .lever-job {
+          flex-wrap: wrap;
+        }
+      }
+
+      .lever-job[data-hidden=true],ul.lever-team.hidden {
+          display: none!important;
+      }
+      #new-list .list,
+      #lever-clear-filters {
+          display: none;
+      }
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Raleway:wght@300;400;500;700&family=DM+Sans:wght@500&display=swap');
+
+#wpadminbar {
+  opacity: 0.01;
+  transition: opacity 0.25s ease;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.container {
+  width: 90vw;
+  max-width: 1320px;
+  margin: auto;
+}
+
+body {
+  font-family: 'Raleway';
+  font-weight: 400;
+  &.menu-open {
+    overflow: hidden;
+  }
+}
+
+header {
+  padding-top: 50px;
+  position: absolute;
+  width: 100vw;
+  z-index: 1;
+  .navbar {
+    .container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-brand {
+      display: block;
+      svg {
+        display: block;
+        width: 32px;
+      }
+    }
+    .navbar-toggle {
+      @include breakpoint(sm) {
+        display: none;
+      }
+    }
+    .navbar-menu {
+      
+      ul {
+        display: flex;
+        li {
+          a {
+            color: white;
+            font-family: 'Lexend Deca';
+            font-size: 14px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+      }
+      
+
+    }
+  }
+}
+
+
+@include breakpoint(md) {
+  .row {
+    display: flex;
+    align-content: stretch;
+    margin-left: -16px;
+    margin-right: -16px;
+    .col {
+      &-3 {
+        flex: 0 0 25%;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      &-4 {
+        flex: 0 0 33.3333333333%;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      &-5 {
+        flex: 0 0 41.6666666667%;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      &-6 {
+        flex: 0 0 50%;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+  }
+}

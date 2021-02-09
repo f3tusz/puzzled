@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 848.7" style="enable-background:new 0 0 80 848.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+</style>
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="81.9358" y1="326.6663" x2="-2.0512" y2="326.6663" gradientTransform="matrix(1 0 0 -1 0 750.9933)">
+		<stop  offset="0.1042" style="stop-color:#C6097A"/>
+		<stop  offset="0.6875" style="stop-color:#F86864"/>
+	</linearGradient>
+	<polygon class="st0" points="80,809.6 0,848.7 0,0 80,29.3 	"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="80" y1="424.327" x2="8.344641e-07" y2="424.327">
+		<stop  offset="0" style="stop-color:#F86864"/>
+		<stop  offset="0.996" style="stop-color:#F86864;stop-opacity:0"/>
+	</linearGradient>
+	<path class="st1" d="M4,5.7l72,26.3v775.1L4,842.3V5.7 M0,0v848.7l80-39V29.3L0,0L0,0z"/>
+</g>
+</svg>

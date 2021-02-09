@@ -1,0 +1,95 @@
+/*
+ * Tables
+ */
+
+table {
+    width: 100%;
+    thead {
+        background-color: $black;
+        @include media(mobile) {
+        display: none;
+      }
+        tr {
+            border-bottom: 0;
+            th {
+                @extend h6;
+                color: $white;
+                padding: 18px 20px;
+                border: 1px solid $black;
+                letter-spacing: 0 !important;
+                @include media(mobile) {
+                    padding: 13px 15px;
+                }
+            }
+        }
+    }
+    tbody {
+      @include media(mobile) {
+        border: 1px solid $black;
+      }
+        tr {
+          @include media(mobile) {
+          background-color: transparent;
+          border-top: 1px solid $black;
+          display: block;
+          padding: 20px 0;
+        }
+        }
+        td {
+
+        }
+    }
+    tr {
+
+    }
+    th, td {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 18px 20px;
+        color: $black;
+        text-align: left;
+        border: 1px solid $black;
+        @include media(mobile) {
+            padding: 13px 15px;
+        }
+    }
+}
+
+table td {
+    border: 1px solid $black;
+    vertical-align: top;
+    .label {
+      display: none;
+      float: left;
+      margin-right: 5px;
+      width: 30%;
+    }
+    @include media(mobile) {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 2px 20px;
+      border: none;
+      overflow: hidden;
+
+      .label {
+        display: inline-block;
+        margin: 0;
+        font-weight: $weight-bold;
+      }
+      a {
+        display: inline-block;
+        width: 49%;
+      }
+    }
+    @include media(xs) {
+      .label {
+        width: 100%;
+        max-width: 100%;
+      }
+      a {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+}

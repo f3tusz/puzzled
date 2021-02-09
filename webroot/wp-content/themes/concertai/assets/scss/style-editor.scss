@@ -1,0 +1,18 @@
+@import url("https://use.typekit.net/vmq3vyq.css");
+
+
+
+body {
+  background-color: #fff;
+  color: #5B736D;
+  font-family: 'circe', sans-serif;
+}
+/* Width  blocks */
+.wp-block,
+.wp-block[data-align='wide'],
+.wp-block[data-align='full'] {
+  max-width: none !important;
+}
+.editor-post-title  .editor-post-title__input {
+    font-family: 'circe', sans-serif !important;
+}

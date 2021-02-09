@@ -1,0 +1,43 @@
+{
+    "key": "group_5ee952e905703",
+    "title": "Subnavigation Menu Item",
+    "fields": [
+        {
+            "key": "field_5ee952fc2c671",
+            "label": "Anchor Link",
+            "name": "anchor_link",
+            "type": "text",
+            "instructions": "Set a lowercase word here to use as an anchor link for when this menu is used as an in-page subnavigation (hero module)\r\n\r\nFor example, if you want to use a subnavigation menu to link \"Executive Team\" to a section about the Executive Team, you can enter \"executive\" for this value, and set the Executive Team's 'anchor' block to also be \"executive\"\r\n\r\nThis value must match the Block's anchor value exactly, or this will not work.\r\n\r\nNo spaces, numbers, or uppercase letters please.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "nav_menu_item",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1592349617
+}

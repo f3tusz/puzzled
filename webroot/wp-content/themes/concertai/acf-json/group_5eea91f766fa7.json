@@ -1,0 +1,582 @@
+{
+    "key": "group_5eea91f766fa7",
+    "title": "Clone &mdash; General Options",
+    "fields": [
+        {
+            "key": "field_5ef4ee3ef2eae",
+            "label": "Section ID",
+            "name": "section_id",
+            "type": "text",
+            "instructions": "This will be used as anchor links.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5baab84d1760a",
+            "label": "Padding Top",
+            "name": "padding_top",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "small": "Small",
+                "large": "Large",
+                "custom": "Custom"
+            },
+            "default_value": "large",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5baab8a71760c",
+            "label": "Padding Top Value",
+            "name": "padding_top_value",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5baab84d1760a",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5baab88f1760b",
+            "label": "Padding Bottom",
+            "name": "padding_bottom",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "small": "Small",
+                "large": "Large",
+                "custom": "Custom"
+            },
+            "default_value": "large",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5baab8ca1760d",
+            "label": "Padding Bottom Value",
+            "name": "padding_bottom_value",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5baab88f1760b",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5eea8f711027e",
+            "label": "Background Type",
+            "name": "background_type",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "basic": "Basic (white background, content centered)",
+                "solid": "Solid (solid background color, white text)",
+                "image": "Image (Background image, gradient, white text)",
+                "gradient": "Gradient"
+            },
+            "default_value": "basic",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5eea8fff1027f",
+            "label": "Background Image",
+            "name": "background_image",
+            "type": "image",
+            "instructions": "If using this for the 'hero' module:<br \/>\r\n<em><b>Standard Display:<\/b> 70px by 70px<br \/>\r\n<b>Retina Display:<\/b> 140px by 140px<\/em>",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eea8f711027e",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5eea903410280",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "select",
+            "instructions": "These colors will come with white text unless otherwise noted.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eea8f711027e",
+                        "operator": "==",
+                        "value": "solid"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "#C20DD1": "Magenta",
+                "#7311F2": "Purple",
+                "#3AD0F9": "Cyan",
+                "#F86864": "Orange",
+                "#000F8C": "Deep Blue",
+                "#0C3675": "Slate",
+                "#000255": "Dark Blue",
+                "#A0A6CA": "Gray",
+                "#DFE2F0": "Medium Gray (dark text)",
+                "#F5F5F6": "Light Gray (dark text)"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5efa8b53c3cfd",
+            "label": "Has Background Overlay",
+            "name": "has_background_overlay",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eea8f711027e",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "no": "No",
+                "yes": "Yes"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5f35926727be3",
+            "label": "Use Default Gradient instead?",
+            "name": "default_gradient",
+            "type": "select",
+            "instructions": "If you're not sure, leave this set to 'yes'",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eea8f711027e",
+                        "operator": "==",
+                        "value": "image"
+                    },
+                    {
+                        "field": "field_5efa8b53c3cfd",
+                        "operator": "==",
+                        "value": "no"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "yes",
+                "no": "no"
+            },
+            "default_value": "yes",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5efa893f785a2",
+            "label": "Background Overlay Color",
+            "name": "background_overlay_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5efa8b53c3cfd",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "#C20DD1": "Magenta",
+                "#7311F2": "Purple",
+                "#3AD0F9": "Cyan",
+                "#F86864": "Orange",
+                "#000F8C": "Deep Blue",
+                "#0C3675": "Slate",
+                "#000255": "Dark Blue",
+                "#A0A6CA": "Gray",
+                "#DFE2F0": "Medium Gray (dark text)",
+                "#F5F5F6": "Light Gray (dark text)"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5efa8930785a1",
+            "label": "Background Overlay Opacity",
+            "name": "background_overlay_opacity",
+            "type": "number",
+            "instructions": "Enter as decimal points, greater than 0 and less than 1.\r\n\r\n(Examples: 0.25, 0.5, 0.8)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5efa8b53c3cfd",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5f036b0416840",
+            "label": "Background Gradient Top",
+            "name": "background_gradient_top",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eea8f711027e",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000255"
+        },
+        {
+            "key": "field_5f036b2516841",
+            "label": "Background Gradient Bottom",
+            "name": "background_gradient_bottom",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eea8f711027e",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#7311F2"
+        },
+        {
+            "key": "field_5ef4ccb617836",
+            "label": "Frame Color",
+            "name": "frame_color",
+            "type": "select",
+            "instructions": "Selecting a color here will enable the frame option for this module.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "No Frame",
+                "#C20DD1": "Magenta",
+                "#7311F2": "Purple",
+                "#3AD0F9": "Cyan",
+                "#F86864": "Orange",
+                "#000F8C": "Deep Blue",
+                "#0C3675": "Slate",
+                "#000255": "Dark Blue",
+                "#A0A6CA": "Gray",
+                "#DFE2F0": "Medium Gray",
+                "#F5F5F6": "Light Gray"
+            },
+            "default_value": "none",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5ee06c0d164f1",
+            "label": "Title Alignment",
+            "name": "block_title_alignment",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5ee06b07dc443",
+            "label": "Pre-Title",
+            "name": "block_pre_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ee06b0edc444",
+            "label": "Title",
+            "name": "block_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5efcffe9994b9",
+            "label": "Heading Type",
+            "name": "h_type",
+            "type": "select",
+            "instructions": "Choose a heading type to change the Title to. (Default is H2)\r\n\r\nUse H1 if it's the title of the whole page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "h1": "h1",
+                "h2": "h2"
+            },
+            "default_value": "h2",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5eeaa2c7f8193",
+            "label": "Body Text",
+            "name": "body_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1599075492
+}

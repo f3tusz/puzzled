@@ -1,0 +1,107 @@
+.block-wide-content {
+    .titles {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .wide-content-image {
+        position: relative;  
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* fixes ios stretching images */
+        &:after {
+            content:" ";
+            z-index:2;
+            transition: all 2s ease;
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+        }
+        .magnifier {
+            position: absolute;
+            top: -25px;
+            right: 0;  
+            @include media-breakpoint-up(md){
+                display: none;
+            }    
+            &:after {
+                content: '';
+                position: absolute;
+                height: 22px;
+                width: 22px;
+                top: 0;
+                right: 0;
+                background: url('../img/search-magnify.svg');
+                filter: brightness(0) saturate(100%) invert(77%) sepia(40%) saturate(4150%) hue-rotate(163deg) brightness(105%) contrast(95%);
+            }
+        }
+        img {
+            max-width: 100%;
+
+        }
+        @include media-breakpoint-up(md){
+            &.max-width-60 {
+                img {
+                max-width:60%;
+                margin:0 auto;
+                }
+            }
+        }
+    }
+    .modal {
+        display: none;
+        overflow: scroll;
+        &.show {
+            display: block;
+            height: 100%;
+            .modal-dialog {
+                top: calc(50% - 200px);
+            }
+        }
+        .modal-content {
+            background-color: transparent;
+            border: none;
+            .modal-header {
+                border: none;
+                z-index: 1200;
+                .modal-svg {
+                    position: fixed;
+                    right: 31px;
+                    top: 31px;
+                    svg:hover {
+                        cursor: pointer;
+                    }
+                    svg line {
+                        stroke: $cyan;
+                    }
+                }
+            }
+            .modal-body {
+                overflow: visible!important;
+            }
+        }
+        .modal-dialog {
+            max-width: 100%!important;
+        }
+    }
+}
+
+.multiple-images {
+    img {
+      position: absolute;
+      top:0;
+      opacity:0;
+    }
+}
+
+
+.modal-content {
+  overflow:visible!important;
+  .modal-body {
+    height:100vh;
+    img {
+      margin-top:170px;
+    }
+  }
+}
